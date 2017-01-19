@@ -11,6 +11,7 @@ public class InputMultiply {
 		
 		System.out.println("");
 		System.out.println("=================");
+		System.out.println("");
 		System.out.println("구구단 "+number+"단을 출력합니다.");
 		
 		int i= 0;
