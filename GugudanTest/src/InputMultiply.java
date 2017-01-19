@@ -19,8 +19,8 @@ public class InputMultiply {
 			System.out.println(number+"x"+(i+1)+"="+number*(i+1));
 			i++;
 		
-	}
-			i=0;
+			}
+			
 			
 	}
 }
