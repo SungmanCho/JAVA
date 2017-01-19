@@ -12,7 +12,7 @@ public class Arrays {
 		int i=0;
 		//3-2. while 반복문을 반복한다. 조건은 반복값이 nameCount보다 작을 때까지만 한다.
 		while (i<nameCount){
-			//names[0],names[1],names[2]
+		//names[0],names[1],names[2]
 		//3-3. 반복 구문: names 배열의 원소를 꺼내 출력한다.	
 			System.out.println(names[i]);
 		//3-4. 반복 값을 증가시킨다.
