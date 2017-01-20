@@ -31,7 +31,7 @@ public class Example1 {
 		double averagePoint = totalPoint /(scores.length*1.0);//실수로 바뀐다.
 		//System.out.println("평균은 " + averagePoint + " 입니다.");//%f<=double 타입,%.2f<=소수점 2자리 표현, %d<=int, %s<=string
 		//
-		String message =  String.format("총점은 %d, 평균 %.2f 입니다.", totalPoint, averagePoint);
+		String message =  String.format("총점은 %d, 평균 %.2f 입니다.", totalPoint, averagePoint);//좀 더 편리함!!!
 		System.out.println(message);
 		//평균 90점 넘었을 때
 		if(averagePoint>=90){	
