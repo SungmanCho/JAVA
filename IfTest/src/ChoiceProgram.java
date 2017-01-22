@@ -73,7 +73,7 @@ public class ChoiceProgram{
 				System.out.println("키를 입력하세요.");
 				int tall = input.nextInt();
 				BMI[1]=tall;
-				double bmi = BMI[0]/(BMI[1]*0.1*BMI[1]*0.1);
+				double bmi = BMI[0]/(BMI[1]*0.01*BMI[1]*0.01);
 				System.out.println("BMI 지수는 " + bmi + " 입니다.");
 			}
 			//4번 선택시 종료
