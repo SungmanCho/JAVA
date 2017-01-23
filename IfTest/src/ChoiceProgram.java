@@ -5,7 +5,7 @@ public class ChoiceProgram{
 		
 		void printInputNumber(){
 			//다섯번 실행
-			for(int i=0;i<5;i++){
+			while(true){
 			//첫 번째 입력 받음
 			int[] number = new int[1];	
 			
@@ -48,6 +48,7 @@ public class ChoiceProgram{
 								+ scores[2] + " + "
 								+scores[3] + scores[4]+" = "
 								+ totalPoint+"점");
+				
 				double averagePoint = totalPoint /(scores.length*1.0);//실수로 바뀐다.
 				System.out.println("평균은 " + averagePoint + " 점입니다.");
 			}
@@ -57,6 +58,7 @@ public class ChoiceProgram{
 				
 				System.out.println("섭씨에서 화씨로 변환합니다.");
 				System.out.println("섭씨를 입력해 주세요.");
+				
 				double cel = input.nextDouble();
 				double fah = (cel * 1.8) + 32;
 				
@@ -67,21 +69,27 @@ public class ChoiceProgram{
 			else if (choice==3){
 				
 				int[] BMI = new int[2];
+				
 				System.out.println("몸무게를 입력하세요.");
 				int weight = input.nextInt();
 				BMI[0]=weight;
+				
 				System.out.println("키를 입력하세요.");
 				int tall = input.nextInt();
 				BMI[1]=tall;
+				
 				double bmi = BMI[0]/(BMI[1]*0.01*BMI[1]*0.01);
 				System.out.println("BMI 지수는 " + bmi + " 입니다.");
 			}
 			//4번 선택시 종료
-			if(choice==4){
+			else if(choice==4){
 				break;
+				
 			}
-		}
+		  }
+	    }
 	}
-}
+
+
 
 		
