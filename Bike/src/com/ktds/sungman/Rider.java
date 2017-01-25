@@ -31,6 +31,7 @@ public class Rider {
 		bikestore.bollow(givemoney, this);
 	}
 	public int selectbike() {
+		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
 		int menu = input.nextInt();
 		return menu;

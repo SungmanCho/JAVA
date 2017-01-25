@@ -4,12 +4,13 @@ package com.ktds.sungman;
 public class Main {
 	
 	public void start(){
-		Rider rider = new Rider(10000);
-		BikeStore bikestore = new BikeStore(20000, 100);
+		Rider rider = new Rider(100000);
+		BikeStore bikestore = new BikeStore(100000,100);
 		
-		rider.bollow(bikestore, 10000);
+		bikestore.bollow(5000,rider);
 		
 		System.out.println(rider);
+		System.out.println();
 		System.out.println(bikestore);
 	}
 
