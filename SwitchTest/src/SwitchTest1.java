@@ -25,25 +25,34 @@ public class SwitchTest1 {
 		
 		//현재의 상태를 저장할 숫자변수를 만들고 1을 할당한다.
 		int nowState = INJECT;//케이스 선택지점부터 시작, 케이스 범위 초과시 default값 나온다.
+		FileWriteHelper.log("현재 상태 : " + nowState);
 		switch (nowState) {
 		case READY:
 			System.out.println("냄비를 꺼낸다.");
+			FileWriteHelper.log("냄비를 꺼낸다.");
 		case WATER:
 			System.out.println("물을 넣는다.");
+			FileWriteHelper.log("물을 넣는다.");
 		case FIRE:
 			System.out.println("불을 킨다");
+			FileWriteHelper.log("불을 킨다");
 		case BOIL:
 			System.out.println("물을 끓인다.");
+			FileWriteHelper.log("물을 끓인다.");
 			break;//switch를 종료한다.
 		case INJECT:
 			System.out.println("라면을 넣는다.");
+			FileWriteHelper.log("라면을 넣는다.");
 		case OFF:
 			System.out.println("불을 끈다.");
+			FileWriteHelper.log("불을 끈다.");
 		case EAT:
 			System.out.println("냠냠.");
+			FileWriteHelper.log("냠냠.");
 			
 		default:
-			System.out.println("잔다.");//옵션
+			System.out.println("잔다.");
+			FileWriteHelper.log("불을 킨다");//옵션
 			
 		}
 	}
