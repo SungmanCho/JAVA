@@ -23,7 +23,6 @@ public class AirConditioner extends AirCleaner {
 /*	온도 낮추기
  * 
 */
-	
 	public void cooling(){
 		temp--;
 		System.out.println("현재 설정 온도는 " + temp + "도 입니다.");
