@@ -7,7 +7,11 @@ public class Student {
 	public void start() throws MissingValueException {
 		try {
 			registNewStudent();
-		} finally{
+		} catch (MissMatchValueException e) {
+			System.out.println(e.getMessage());// 캐치 두번한것. (ㅇ|ㅇ)는 두개 예외를 잡아내는
+			// 것이다. 처리 못할 거 같으면 throws해라.
+
+		} finally {
 			System.out.println("잘 처리 됐습니다.");
 		}
 		System.out.println("정상적으로 수행되었습니다.");
