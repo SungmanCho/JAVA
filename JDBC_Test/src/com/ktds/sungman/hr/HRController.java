@@ -11,7 +11,8 @@ public class HRController {
 		hrBiz= new HRBizImpl();
 	}
 	public void start(){
-		hrBiz.printAllEmployeesWithDepartments();
+		
+		hrBiz.printOneEmployees(200);
 		
 	}
 	public static void main(String[] args) {

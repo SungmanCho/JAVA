@@ -3,6 +3,7 @@ package com.ktds.sungman.hr.biz;
 
 import java.util.List;
 
+
 import com.ktds.sungman.hr.dao.HRDao;
 import com.ktds.sungman.hr.dao.HRDaoImpl;
 import com.ktds.sungman.hr.vo.EmployeesVO;;
@@ -32,6 +33,22 @@ public class HRBizImpl implements HRBiz {
 					
 					
 		}
+	@Override
+	public void printOneEmployees(int employeeId) {
+		EmployeesVO employees= hrDao.findOneEmployee(employeeId);
+		System.out.printf("%d\t%s\t%s\t%s\t%s\t%s\t%s\t%d\t%f\t%d\t%d\n",
+				employees.getEmployeeId()
+				, employees.getFirstName()
+				, employees.getLastName()
+				, employees.getEmail()
+				, employees.getPhoneNumber()
+				, employees.getHireDate()
+				, employees.getJobId()
+				, employees.getSalary()
+				, employees.getCommissionPct()
+				, employees.getManagerId()
+				, employees.getDepartmentId());
+	}
 	@Override
 	public void printAllEmployeesWithDepartments() {
 		List<EmployeesVO> allEmployees = hrDao.getAllEmployeesWithDepartments();
@@ -75,6 +92,6 @@ public class HRBizImpl implements HRBiz {
 					, employeesVO.getJobs().getMaxSalary()
 					, employeesVO.getJobs().getMinSalary());
 		
+		}
 	}
-}
 }

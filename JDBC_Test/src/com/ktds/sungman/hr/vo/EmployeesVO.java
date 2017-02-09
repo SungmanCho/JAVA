@@ -1,18 +1,31 @@
 package com.ktds.sungman.hr.vo;
 
-public class EmployeesVO {
+import com.ktds.sungman.dao.support.annotaion.Types;
 
+public class EmployeesVO {
+	@Types
 	private int employeeId;
+	@Types
 	private String firstName;
+	@Types
 	private String lastName;
+	@Types
 	private String email;
+	@Types
 	private String phoneNumber;
+	@Types
 	private String hireDate;
+	@Types
 	private String jobId;
+	@Types
 	private int salary;
+	@Types
 	private double commissionPct;
+	@Types
 	private int managerId;
+	@Types
 	private int departmentId;
+
 	private String jobTitle;
 	private int maxSalary;
 	private int minSalary;

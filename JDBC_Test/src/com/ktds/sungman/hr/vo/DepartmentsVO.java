@@ -1,9 +1,15 @@
 package com.ktds.sungman.hr.vo;
 
+import com.ktds.sungman.dao.support.annotaion.Types;
+
 public class DepartmentsVO {
+	@Types(alias="D_DEPARTMENT_ID")
 	private int departmentId;
+	@Types
 	private String departmentName;
+	@Types(alias = "D_MANAGER_ID")
 	private int managerId;
+	@Types
 	private int locationId;
 
 	public int getDepartmentId() {
